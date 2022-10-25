@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+    <LANGU>R</LANGU>
+    <DESCRIPT>Обработка заявок на отсутствие</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Отсутствие должно полностью расходовать лимит</ENTRY>
+     <LENGTH>90</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>CHANGE_INFOGROUP</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Изменить инфогруппу при проведении мероприятия</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>CHECK_QUOTA_DEDUCE</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Проверка списания лимита при заведении заявки</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>CHECK_VALID_PERNR</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Проверить табельный номер на валидность для портала отпусков</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>C_MEMORY_RR_ID</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Текст длиной 20 знаков</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>DETERMINE_PERNR</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Определить ТН для кого запустили сервис</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>FIND_RUNNING_DEL_VACATION</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Найти заявку на удаление отпуска</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>FIX_UPPERCASE_FIO</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Преобразовать ФИО из uppercase</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>GET_EMAIL</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Определить e-mail</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>GET_LIMIT_DAYS</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Получить лимит отпуска на конкретную дату</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>GET_OLD_VACATION</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Получить дату предыдущего отпуска</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>GET_PERNR_BY_AD</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Получить табельный по AD</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>GET_PERNR_NAME</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>ФИО по табельному</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>GET_REQLIST</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Получить список заявок</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>GET_REQUESTS_WITH_DIVIDED</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Дополнить ID заявок другой заявкой перенесенного отпуска</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>GET_REQ_HEADER_DATA</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Чтение актуальных данных заголовка по заявке</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>GET_TIMETYPES</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Получить список видов времени по типу (2001-&gt;2006)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_VACATION_APPL</CLSNAME>
+     <CMPNAME>IS_NEED_0105_CHECK</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Надо лли проверять пользователя в ИТ 0105</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

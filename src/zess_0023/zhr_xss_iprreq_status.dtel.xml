@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZHR_XSS_IPRREQ_STATUS</ROLLNAME>
+    <DDLANGUAGE>R</DDLANGUAGE>
+    <DOMNAME>ZHR_XSS_IPRREQ_STATUS</DOMNAME>
+    <HEADLEN>30</HEADLEN>
+    <SCRLEN1>06</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Статус ИПР</DDTEXT>
+    <REPTEXT>Статус</REPTEXT>
+    <SCRTEXT_S>Статус</SCRTEXT_S>
+    <SCRTEXT_M>Статус</SCRTEXT_M>
+    <SCRTEXT_L>Статус</SCRTEXT_L>
+    <DTELMASTER>R</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Статус ИПР</DDTEXT>
+     <REPTEXT>Статус</REPTEXT>
+     <SCRTEXT_S>Статус</SCRTEXT_S>
+     <SCRTEXT_M>Статус</SCRTEXT_M>
+     <SCRTEXT_L>Статус</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

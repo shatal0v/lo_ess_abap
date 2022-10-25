@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+    <LANGU>R</LANGU>
+    <DESCRIPT>Утилиты ESS</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>EXPERIENCE_GET_DATA</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Отчет о стажах</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>GC_PERSONAL_MEMORY_ID_T2</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>CHAR 20</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>GET_INPUT_FILTER</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Получение данных фильтра</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>GET_REF_UNTIL_DATE</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Дата предоставления справки о доходах</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>INCOME_INFO_REVIEW</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Сведения о доходах. Обзор справок о доходах</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>INCOME_INFO_SUBMIT</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Сведения о доходах. Подать сведения</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>PERSONAL_GET_ADDRESS_DATA</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Персональные данные. Получение адресных данных</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>PERSONAL_GET_EMPLOYER_DATA</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Персональные данные. Получение данных сотрудника</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>PERSONAL_GET_FAMILY_DATA</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Персональные данные. Получение данных о семье</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_ESS_DATA_ASSISTENT</CLSNAME>
+     <CMPNAME>PERSONAL_GET_T2_DATA</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Персональные данные. Получение формы Т-2</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

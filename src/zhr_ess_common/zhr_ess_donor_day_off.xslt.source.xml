@@ -1,0 +1,1129 @@
+<xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sap="http://www.sap.com/sapxsl" version="1.0">
+
+  <xsl:strip-space elements="*"/>
+
+  <xsl:template match="/">
+
+    <?mso-application progid="Word.Document"?>
+    <w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:mc=
+"http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w=
+"http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2"
+xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:embeddedObjPresent="no" w:macrosPresent="no" w:ocxPresent="no" xml:space="preserve">
+      <w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2"/>
+      <o:DocumentProperties>
+        <o:Author>Скоробагатов Алексей</o:Author>
+        <o:LastAuthor>Скоробагатов Алексей</o:LastAuthor>
+        <o:Revision>1</o:Revision>
+        <o:TotalTime>0</o:TotalTime>
+        <o:Created>2020-06-08T14:38:00Z</o:Created>
+        <o:LastSaved>2020-06-08T14:38:00Z</o:LastSaved>
+        <o:Pages>1</o:Pages>
+        <o:Words>76</o:Words>
+        <o:Characters>436</o:Characters>
+        <o:Company>IBS</o:Company>
+        <o:Lines>3</o:Lines>
+        <o:Paragraphs>1</o:Paragraphs>
+        <o:CharactersWithSpaces>511</o:CharactersWithSpaces>
+        <o:Version>14</o:Version>
+      </o:DocumentProperties>
+      <w:fonts>
+        <w:defaultFonts w:ascii="Calibri" w:cs="Times&#xA;New Roman" w:fareast="Calibri" w:h-ansi="Calibri"/>
+        <w:font w:name="Times New Roman">
+          <w:panose-1 w:val="02020603050405020304"/>
+          <w:charset w:val="CC"/>
+          <w:family w:val="Roman"/>
+          <w:pitch w:val="variable"/>
+          <w:sig w:csb-0="000001FF" w:csb-1="00000000" w:usb-0="E0002EFF" w:usb-1="C000785B" w:usb-2="00000009" w:usb-3="00000000"/>
+        </w:font>
+        <w:font w:name="Cambria Math">
+          <w:panose-1 w:val="02040503050406030204"/>
+          <w:charset w:val="CC"/>
+          <w:family w:val="Roman"/>
+          <w:pitch w:val="variable"/>
+          <w:sig w:csb-0="0000019F" w:csb-1="00000000" w:usb-0="E00006FF" w:usb-1="420024FF" w:usb-2="02000000" w:usb-3="00000000"/>
+        </w:font>
+        <w:font w:name="Arial Unicode MS">
+          <w:panose-1 w:val="020B0604020202020204"/>
+          <w:charset w:val="80"/>
+          <w:family w:val="Swiss"/>
+          <w:pitch w:val="variable"/>
+          <w:sig w:csb-0="003F01FF" w:csb-1="00000000" w:usb-0="F7FFAFFF" w:usb-1="E9DFFFFF" w:usb-2="0000003F" w:usb-3="00000000"/>
+        </w:font>
+        <w:font w:name="Calibri">
+          <w:panose-1 w:val="020F0502020204030204"/>
+          <w:charset w:val="CC"/>
+          <w:family w:val="Swiss"/>
+          <w:pitch w:val="variable"/>
+          <w:sig w:csb-0="000001FF" w:csb-1="00000000" w:usb-0="E4002EFF" w:usb-1="C000247B" w:usb-2="00000009" w:usb-3="00000000"/>
+        </w:font>
+        <w:font w:name="@Arial Unicode MS">
+          <w:panose-1 w:val="020B0604020202020204"/>
+          <w:charset w:val="80"/>
+          <w:family w:val="Swiss"/>
+          <w:pitch w:val="variable"/>
+          <w:sig w:csb-0="003F01FF" w:csb-1="00000000" w:usb-0="F7FFAFFF" w:usb-1="E9DFFFFF" w:usb-2="0000003F" w:usb-3="00000000"/>
+        </w:font>
+      </w:fonts>
+      <w:styles>
+        <w:versionOfBuiltInStylenames w:val="7"/>
+        <w:latentStyles w:defLockedState="off" w:latentStyleCount="267">
+          <w:lsdException w:name="Normal"/>
+          <w:lsdException w:name="heading 1"/>
+          <w:lsdException w:name="heading 2"/>
+          <w:lsdException w:name="heading 3"/>
+          <w:lsdException w:name="heading&#xA;4"/>
+          <w:lsdException w:name="heading 5"/>
+          <w:lsdException w:name="heading 6"/>
+          <w:lsdException w:name="heading 7"/>
+          <w:lsdException w:name="heading 8"/>
+          <w:lsdException w:name="heading 9"/>
+          <w:lsdException w:name="toc 1"/>
+          <w:lsdException w:name="toc&#xA;2"/>
+          <w:lsdException w:name="toc 3"/>
+          <w:lsdException w:name="toc 4"/>
+          <w:lsdException w:name="toc 5"/>
+          <w:lsdException w:name="toc 6"/>
+          <w:lsdException w:name="toc 7"/>
+          <w:lsdException w:name="toc 8"/>
+          <w:lsdException w:name="toc 9"/>
+          <w:lsdException w:name="caption"/>
+          <w:lsdException w:name="Title"/>
+          <w:lsdException w:name="Default Paragraph Font"/>
+          <w:lsdException w:name="Subtitle"/>
+          <w:lsdException w:name="Strong"/>
+          <w:lsdException w:name="Emphasis"/>
+          <w:lsdException w:name="Table&#xA;Grid"/>
+          <w:lsdException w:name="Placeholder Text"/>
+          <w:lsdException w:name="No Spacing"/>
+          <w:lsdException w:name="Light Shading"/>
+          <w:lsdException w:name="Light List"/>
+          <w:lsdException w:name="Light Grid"/>
+          <w:lsdException w:name="Medium Shading&#xA;1"/>
+          <w:lsdException w:name="Medium Shading 2"/>
+          <w:lsdException w:name="Medium List 1"/>
+          <w:lsdException w:name="Medium List 2"/>
+          <w:lsdException w:name="Medium Grid 1"/>
+          <w:lsdException w:name="Medium Grid 2"/>
+          <w:lsdException w:name="Medium Grid&#xA;3"/>
+          <w:lsdException w:name="Dark List"/>
+          <w:lsdException w:name="Colorful Shading"/>
+          <w:lsdException w:name="Colorful List"/>
+          <w:lsdException w:name="Colorful Grid"/>
+          <w:lsdException w:name="Light Shading Accent 1"/>
+          <w:lsdException w:name="Light List Accent&#xA;1"/>
+          <w:lsdException w:name="Light Grid Accent 1"/>
+          <w:lsdException w:name="Medium Shading 1 Accent 1"/>
+          <w:lsdException w:name="Medium Shading 2 Accent 1"/>
+          <w:lsdException w:name="Medium List 1 Accent 1"/>
+          <w:lsdException w:name="Revision"/>
+          <w:lsdException w:name="List Paragraph"/>
+          <w:lsdException w:name="Quote"/>
+          <w:lsdException w:name="Intense Quote"/>
+          <w:lsdException w:name="Medium List 2 Accent 1"/>
+          <w:lsdException w:name="Medium Grid 1 Accent 1"/>
+          <w:lsdException w:name="Medium Grid 2 Accent&#xA;1"/>
+          <w:lsdException w:name="Medium Grid 3 Accent 1"/>
+          <w:lsdException w:name="Dark List Accent 1"/>
+          <w:lsdException w:name="Colorful Shading Accent 1"/>
+          <w:lsdException w:name="Colorful List Accent 1"/>
+          <w:lsdException w:name="Colorful Grid Accent&#xA;1"/>
+          <w:lsdException w:name="Light Shading Accent 2"/>
+          <w:lsdException w:name="Light List Accent 2"/>
+          <w:lsdException w:name="Light Grid Accent 2"/>
+          <w:lsdException w:name="Medium Shading 1 Accent 2"/>
+          <w:lsdException w:name="Medium Shading 2 Accent&#xA;2"/>
+          <w:lsdException w:name="Medium List 1 Accent 2"/>
+          <w:lsdException w:name="Medium List 2 Accent 2"/>
+          <w:lsdException w:name="Medium Grid 1 Accent 2"/>
+          <w:lsdException w:name="Medium Grid 2 Accent 2"/>
+          <w:lsdException w:name="Medium Grid 3 Accent&#xA;2"/>
+          <w:lsdException w:name="Dark List Accent 2"/>
+          <w:lsdException w:name="Colorful Shading Accent 2"/>
+          <w:lsdException w:name="Colorful List Accent 2"/>
+          <w:lsdException w:name="Colorful Grid Accent 2"/>
+          <w:lsdException w:name="Light Shading Accent&#xA;3"/>
+          <w:lsdException w:name="Light List Accent 3"/>
+          <w:lsdException w:name="Light Grid Accent 3"/>
+          <w:lsdException w:name="Medium Shading 1 Accent 3"/>
+          <w:lsdException w:name="Medium Shading 2 Accent 3"/>
+          <w:lsdException w:name="Medium List 1 Accent&#xA;3"/>
+          <w:lsdException w:name="Medium List 2 Accent 3"/>
+          <w:lsdException w:name="Medium Grid 1 Accent 3"/>
+          <w:lsdException w:name="Medium Grid 2 Accent 3"/>
+          <w:lsdException w:name="Medium Grid 3 Accent 3"/>
+          <w:lsdException w:name="Dark List Accent&#xA;3"/>
+          <w:lsdException w:name="Colorful Shading Accent 3"/>
+          <w:lsdException w:name="Colorful List Accent 3"/>
+          <w:lsdException w:name="Colorful Grid Accent 3"/>
+          <w:lsdException w:name="Light Shading Accent 4"/>
+          <w:lsdException w:name="Light List Accent&#xA;4"/>
+          <w:lsdException w:name="Light Grid Accent 4"/>
+          <w:lsdException w:name="Medium Shading 1 Accent 4"/>
+          <w:lsdException w:name="Medium Shading 2 Accent 4"/>
+          <w:lsdException w:name="Medium List 1 Accent 4"/>
+          <w:lsdException w:name="Medium List 2 Accent&#xA;4"/>
+          <w:lsdException w:name="Medium Grid 1 Accent 4"/>
+          <w:lsdException w:name="Medium Grid 2 Accent 4"/>
+          <w:lsdException w:name="Medium Grid 3 Accent 4"/>
+          <w:lsdException w:name="Dark List Accent 4"/>
+          <w:lsdException w:name="Colorful Shading Accent&#xA;4"/>
+          <w:lsdException w:name="Colorful List Accent 4"/>
+          <w:lsdException w:name="Colorful Grid Accent 4"/>
+          <w:lsdException w:name="Light Shading Accent 5"/>
+          <w:lsdException w:name="Light List Accent 5"/>
+          <w:lsdException w:name="Light Grid Accent&#xA;5"/>
+          <w:lsdException w:name="Medium Shading 1 Accent 5"/>
+          <w:lsdException w:name="Medium Shading 2 Accent 5"/>
+          <w:lsdException w:name="Medium List 1 Accent 5"/>
+          <w:lsdException w:name="Medium List 2 Accent 5"/>
+          <w:lsdException w:name="Medium Grid 1 Accent&#xA;5"/>
+          <w:lsdException w:name="Medium Grid 2 Accent 5"/>
+          <w:lsdException w:name="Medium Grid 3 Accent 5"/>
+          <w:lsdException w:name="Dark List Accent 5"/>
+          <w:lsdException w:name="Colorful Shading Accent 5"/>
+          <w:lsdException w:name="Colorful List Accent&#xA;5"/>
+          <w:lsdException w:name="Colorful Grid Accent 5"/>
+          <w:lsdException w:name="Light Shading Accent 6"/>
+          <w:lsdException w:name="Light List Accent 6"/>
+          <w:lsdException w:name="Light Grid Accent 6"/>
+          <w:lsdException w:name="Medium Shading 1 Accent&#xA;6"/>
+          <w:lsdException w:name="Medium Shading 2 Accent 6"/>
+          <w:lsdException w:name="Medium List 1 Accent 6"/>
+          <w:lsdException w:name="Medium List 2 Accent 6"/>
+          <w:lsdException w:name="Medium Grid 1 Accent 6"/>
+          <w:lsdException w:name="Medium Grid 2 Accent&#xA;6"/>
+          <w:lsdException w:name="Medium Grid 3 Accent 6"/>
+          <w:lsdException w:name="Dark List Accent 6"/>
+          <w:lsdException w:name="Colorful Shading Accent 6"/>
+          <w:lsdException w:name="Colorful List Accent 6"/>
+          <w:lsdException w:name="Colorful Grid Accent&#xA;6"/>
+          <w:lsdException w:name="Subtle Emphasis"/>
+          <w:lsdException w:name="Intense Emphasis"/>
+          <w:lsdException w:name="Subtle Reference"/>
+          <w:lsdException w:name="Intense Reference"/>
+          <w:lsdException w:name="Book Title"/>
+          <w:lsdException w:name="Bibliography"/>
+          <w:lsdException w:name="TOC Heading"/>
+        </w:latentStyles>
+        <w:style w:default="on" w:styleId="a" w:type="paragraph">
+          <w:name w:val="Normal"/>
+          <wx:uiName wx:val="Обычный"/>
+          <w:rsid w:val="00B35A6C"/>
+          <w:pPr>
+            <w:spacing w:after="200" w:line="276" w:line-rule="auto"/>
+          </w:pPr>
+          <w:rPr>
+            <wx:font wx:val="Calibri"/>
+            <w:sz w:val="22"/>
+            <w:sz-cs w:val="22"/>
+            <w:lang w:bidi="AR-SA" w:fareast="EN-US" w:val="RU"/>
+          </w:rPr>
+        </w:style>
+        <w:style w:default="on" w:styleId="a0" w:type="character">
+          <w:name w:val="Default Paragraph Font"/>
+          <wx:uiName wx:val="Основной шрифт абзаца"/>
+        </w:style>
+        <w:style w:default="on" w:styleId="a1" w:type="table">
+          <w:name w:val="Normal Table"/>
+          <wx:uiName wx:val="Обычная таблица"/>
+          <w:rPr>
+            <wx:font wx:val="Calibri"/>
+            <w:lang w:bidi="AR-SA" w:fareast="RU" w:val="RU"/>
+          </w:rPr>
+          <w:tblPr>
+            <w:tblInd w:type="dxa" w:w="0"/>
+            <w:tblCellMar>
+              <w:top w:type="dxa" w:w="0"/>
+              <w:left w:type="dxa" w:w="108"/>
+              <w:bottom w:type="dxa" w:w="0"/>
+              <w:right w:type="dxa" w:w="108"/>
+            </w:tblCellMar>
+          </w:tblPr>
+        </w:style>
+        <w:style w:default="on" w:styleId="a2" w:type="list">
+          <w:name w:val="No List"/>
+          <wx:uiName wx:val="Нет списка"/>
+        </w:style>
+      </w:styles>
+      <w:shapeDefaults>
+        <o:shapedefaults spidmax="1026" v:ext="edit"/>
+        <o:shapelayout v:ext="edit">
+          <o:idmap data="1" v:ext="edit"/>
+        </o:shapelayout>
+      </w:shapeDefaults>
+      <w:docPr>
+        <w:view w:val="print"/>
+        <w:zoom w:percent="70"/>
+        <w:doNotEmbedSystemFonts/>
+        <w:proofState w:grammar="clean" w:spelling="clean"/>
+        <w:defaultTabStop w:val="708"/>
+        <w:punctuationKerning/>
+        <w:characterSpacingControl w:val="DontCompress"/>
+        <w:optimizeForBrowser/>
+        <w:allowPNG/>
+        <w:validateAgainstSchema/>
+        <w:saveInvalidXML w:val="off"/>
+        <w:ignoreMixedContent w:val="off"/>
+        <w:alwaysShowPlaceholderText w:val="off"/>
+        <w:compat>
+          <w:breakWrappedTables/>
+          <w:snapToGridInCell/>
+          <w:wrapTextWithPunct/>
+          <w:useAsianBreakRules/>
+          <w:dontGrowAutofit/>
+        </w:compat>
+        <wsp:rsids>
+          <wsp:rsidRoot wsp:val="00C46483"/>
+          <wsp:rsid wsp:val="000502C0"/>
+          <wsp:rsid wsp:val="00051699"/>
+          <wsp:rsid wsp:val="000C4A9E"/>
+          <wsp:rsid wsp:val="0020252F"/>
+          <wsp:rsid wsp:val="003B71EA"/>
+          <wsp:rsid wsp:val="003E0D4E"/>
+          <wsp:rsid wsp:val="004E2A36"/>
+          <wsp:rsid wsp:val="00560BF1"/>
+          <wsp:rsid wsp:val="006C311B"/>
+          <wsp:rsid wsp:val="00AE102F"/>
+          <wsp:rsid wsp:val="00B35A6C"/>
+          <wsp:rsid wsp:val="00B9607A"/>
+          <wsp:rsid wsp:val="00C46483"/>
+          <wsp:rsid wsp:val="00C83211"/>
+          <wsp:rsid wsp:val="00C85E43"/>
+          <wsp:rsid wsp:val="00D82EDA"/>
+          <wsp:rsid wsp:val="00D97A37"/>
+        </wsp:rsids>
+      </w:docPr>
+      <w:body>
+        <wx:sect>
+          <w:p wsp:rsidP="000C4A9E" wsp:rsidR="000C4A9E" wsp:rsidRDefault="000C4A9E">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:left="5103"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times&#xA;New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:val="EN-US"/>
+              </w:rPr>
+              <w:t><xsl:value-of select="//MAIN/PLANS_INIT"/></w:t>
+            </w:r>
+          </w:p>
+          <w:p wsp:rsidP="000C4A9E" wsp:rsidR="000C4A9E" wsp:rsidRDefault="000C4A9E">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:left="5103"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+               <w:t>Дрозденко А.Ю.</w:t>
+            </w:r>
+          </w:p>
+          <w:p wsp:rsidP="00051699" wsp:rsidR="00051699" wsp:rsidRDefault="00051699">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:left="5103"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C" wsp:rsidRPr="003B71EA">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:left="5103"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r wsp:rsidRPr="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>от </w:t>
+            </w:r>
+            <w:r wsp:rsidR="000502C0" wsp:rsidRPr="004A6963">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:val="EN-US"/>
+              </w:rPr>
+              <w:t><xsl:value-of select="//MAIN/PLANS_INIT"/></w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C" wsp:rsidRPr="003B71EA">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:left="5103"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r wsp:rsidRPr="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>      (</w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:i/>
+                <w:sz w:val="20"/>
+                <w:sz-cs w:val="20"/>
+              </w:rPr>
+              <w:t>должность полностью</w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C" wsp:rsidRPr="003B71EA">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:left="5103"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:left="5103"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New&#xA;Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r wsp:rsidRPr="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New&#xA;Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>ФИО </w:t>
+            </w:r>
+           <w:r wsp:rsidR="000502C0" wsp:rsidRPr="004A6963">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:val="EN-US"/>
+              </w:rPr>
+              <w:t><xsl:value-of select="//MAIN/FIO_INITS"/></w:t>
+            </w:r>
+            <w:r wsp:rsidR="000502C0" wsp:rsidRPr="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New&#xA;Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t> </w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:i/>
+                <w:sz w:val="20"/>
+                <w:sz-cs w:val="20"/>
+              </w:rPr>
+              <w:t>полностью</w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:left="5103"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>Заявление</w:t>
+            </w:r>
+          </w:p>
+          <w:p wsp:rsidP="00C85E43" wsp:rsidR="00C85E43" wsp:rsidRDefault="00C85E43">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New&#xA;Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:fareast="Arial Unicode MS" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>Прошу </w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="00133801">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:fareast="Arial Unicode MS" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>предоставить</w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="00133801">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:b-cs/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>
+</w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="00133801">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>дополнительны</w:t>
+            </w:r>
+            <w:proofErr w:type="gramStart"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>й(</w:t>
+            </w:r>
+            <w:proofErr w:type="gramEnd"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>е)</w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="00133801">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New&#xA;Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t> </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>день(дни) отдыха с </w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="00133801">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>сохранением
+средней заработной платы за сдачу крови и ее компонентов</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>: </w:t>
+            </w:r>
+            <w:r wsp:rsidR="003B71EA">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>с</w:t>
+            </w:r>
+            <w:r wsp:rsidR="003B71EA" wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t> «</w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+            <w:r wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:val="EN-US"/>
+              </w:rPr>
+              <w:t><xsl:value-of select="//MAIN/DAYFROM"/></w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+            <w:r wsp:rsidR="003B71EA" wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>» </w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+           <w:r wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:val="EN-US"/>
+              </w:rPr>
+              <w:t><xsl:value-of select="//MAIN/MONTHTXTFROM"/></w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+            <w:r wsp:rsidR="003B71EA" wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t> </w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:val="EN-US"/>
+              </w:rPr>
+              <w:t><xsl:value-of select="//MAIN/YEARFROM"/></w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+            <w:r wsp:rsidR="003B71EA" wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New&#xA;Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t> года по «</w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+            <w:r wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:val="EN-US"/>
+              </w:rPr>
+              <w:t><xsl:value-of select="//MAIN/DAYTO"/></w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+            <w:r wsp:rsidR="003B71EA" wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>» </w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+             <w:r wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:val="EN-US"/>
+              </w:rPr>
+              <w:t><xsl:value-of select="//MAIN/MONTHTXTTO"/></w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+            <w:r wsp:rsidR="003B71EA" wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t> </w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+             <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:val="EN-US"/>
+              </w:rPr>
+              <w:t><xsl:value-of select="//MAIN/YEARFROM"/></w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+            <w:r wsp:rsidR="003B71EA" wsp:rsidRPr="004D3A60">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>года</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:fareast="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+                <w:lang w:fareast="RU"/>
+              </w:rPr>
+              <w:t>.</w:t>
+            </w:r>
+          </w:p>
+          <w:p wsp:rsidP="00C85E43" wsp:rsidR="00C85E43" wsp:rsidRDefault="00C85E43">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New&#xA;Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>Справку от </w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="00B407A9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:b/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>«___»___________ </w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="00B407A9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>20__
+года</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t> № _______ прилагаю.</w:t>
+            </w:r>
+          </w:p>
+          <w:p wsp:rsidP="00B9607A" wsp:rsidR="00B9607A" wsp:rsidRDefault="00B9607A">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times&#xA;New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>.</w:t>
+            </w:r>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C" wsp:rsidRPr="00D97A37">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="000502C0" wsp:rsidRDefault="000502C0" wsp:rsidRPr="00D97A37">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="000502C0" wsp:rsidRDefault="000502C0" wsp:rsidRPr="00D97A37">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="000502C0" wsp:rsidRDefault="000502C0" wsp:rsidRPr="00D97A37">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="000502C0" wsp:rsidRDefault="000502C0" wsp:rsidRPr="00D97A37">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="000502C0" wsp:rsidRDefault="000502C0" wsp:rsidRPr="00D97A37">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="000502C0" wsp:rsidRDefault="000502C0" wsp:rsidRPr="00D97A37">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>Согласовано</w:t>
+            </w:r>
+            <w:r wsp:rsidRPr="00C85E43">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times&#xA;New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+              <w:t>:</w:t>
+            </w:r>
+          </w:p>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="003B71EA" wsp:rsidRDefault="003B71EA" wsp:rsidRPr="00C85E43">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:tbl>
+            <w:tblPr>
+              <w:tblW w:type="auto" w:w="0"/>
+              <w:tblLook w:val="04A0"/>
+            </w:tblPr>
+            <w:tblGrid>
+              <w:gridCol w:w="4785"/>
+              <w:gridCol w:w="4786"/>
+            </w:tblGrid>
+            <w:tr wsp:rsidR="003B71EA" wsp:rsidRPr="009F630F" wsp:rsidTr="00BF07BD">
+              <w:tc>
+                <w:tcPr>
+                  <w:tcW w:type="dxa" w:w="4785"/>
+                  <w:shd w:color="auto" w:fill="auto" w:val="clear"/>
+                </w:tcPr>
+                <w:p wsp:rsidP="00BF07BD" wsp:rsidR="003B71EA" wsp:rsidRDefault="003B71EA" wsp:rsidRPr="009F630F">
+                  <w:pPr>
+                    <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+                    <w:jc w:val="both"/>
+                    <w:rPr>
+                      <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                      <wx:font wx:val="Times New Roman"/>
+                      <w:sz w:val="28"/>
+                      <w:sz-cs w:val="28"/>
+                      <w:lang w:val="EN-US"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:r wsp:rsidRPr="009F630F">
+                    <w:rPr>
+                      <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                      <wx:font wx:val="Times New Roman"/>
+                      <w:sz w:val="28"/>
+                      <w:sz-cs w:val="28"/>
+                      <w:lang w:val="EN-US"/>
+                    </w:rPr>
+                    <w:t><xsl:value-of select="//MAIN/PLANS_HEAD"/></w:t>
+                  </w:r>
+                </w:p>
+              </w:tc>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcW w:type="dxa" w:w="4786"/>
+                  <w:shd w:color="auto" w:fill="auto" w:val="clear"/>
+                </w:tcPr>
+                <w:p wsp:rsidP="00BF07BD" wsp:rsidR="003B71EA" wsp:rsidRDefault="003B71EA" wsp:rsidRPr="000E5273">
+                  <w:pPr>
+                    <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+                    <w:jc w:val="right"/>
+                    <w:rPr>
+                      <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                      <wx:font wx:val="Times New Roman"/>
+                      <w:sz w:val="28"/>
+                      <w:sz-cs w:val="28"/>
+                    </w:rPr>
+                  </w:pPr>
+                  <w:proofErr w:type="spellStart"/>
+                  <w:r wsp:rsidRPr="009F630F">
+                    <w:rPr>
+                      <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                      <wx:font wx:val="Times New Roman"/>
+                      <w:sz w:val="28"/>
+                      <w:sz-cs w:val="28"/>
+                      <w:lang w:val="EN-US"/>
+                    </w:rPr>
+                    <w:t><xsl:value-of select="//MAIN/FIO_HEAD"/></w:t>
+                  </w:r>
+                  <w:proofErr w:type="spellEnd"/>
+                </w:p>
+                <w:p wsp:rsidP="00BF07BD" wsp:rsidR="003B71EA" wsp:rsidRDefault="003B71EA" wsp:rsidRPr="009F630F">
+                  <w:pPr>
+                    <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+                    <w:jc w:val="right"/>
+                    <w:rPr>
+                      <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                      <wx:font wx:val="Times New Roman"/>
+                      <w:sz w:val="28"/>
+                      <w:sz-cs w:val="28"/>
+                      <w:lang w:val="EN-US"/>
+                    </w:rPr>
+                  </w:pPr>
+                </w:p>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+          <w:p wsp:rsidP="00B35A6C" wsp:rsidR="00B35A6C" wsp:rsidRDefault="00B35A6C" wsp:rsidRPr="00C85E43">
+            <w:pPr>
+              <w:spacing w:after="0" w:line="240" w:line-rule="auto"/>
+              <w:ind w:first-line="709"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:h-ansi="Times New Roman"/>
+                <wx:font wx:val="Times New Roman"/>
+                <w:sz w:val="28"/>
+                <w:sz-cs w:val="28"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:sectPr wsp:rsidR="00B35A6C" wsp:rsidRPr="00C85E43">
+            <w:pgSz w:h="16838" w:w="11906"/>
+            <w:pgMar w:bottom="1134" w:footer="708" w:gutter="0" w:header="708" w:left="1701" w:right="850" w:top="1134"/>
+            <w:cols w:space="708"/>
+            <w:docGrid w:line-pitch="360"/>
+          </w:sectPr>
+        </wx:sect>
+      </w:body>
+    </w:wordDocument>
+
+  </xsl:template>
+
+</xsl:transform>

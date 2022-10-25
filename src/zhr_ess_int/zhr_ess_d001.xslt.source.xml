@@ -1,0 +1,700 @@
+<xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sap="http://www.sap.com/sapxsl" version="1.0">
+
+  <xsl:strip-space elements="*"/>
+
+  <xsl:output encoding="UTF-8"/>
+  <xsl:output standalone="true"/>
+
+  <xsl:template match="ROOT">
+    <Import xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ServiceInformations>
+      <ServiceInformation>
+        <OrganizationUID><xsl:value-of select="HEADER/ORGANIZATIONUID"/></OrganizationUID>
+        <LimitNumbers><xsl:value-of select="HEADER/LIMITNUMBERS"/></LimitNumbers>
+        <StaffNumbers><xsl:value-of select="HEADER/STAFFNUMBERS"/></StaffNumbers>
+        <CurrentNumbers><xsl:value-of select="HEADER/CURRENTNUMBERS"/></CurrentNumbers>
+        <VacancyNumbers><xsl:value-of select="HEADER/VACANCYNUMBERS"/></VacancyNumbers>
+        <InformationSystemName><xsl:value-of select="HEADER/INFORMATIONSYSTEMNAME"/></InformationSystemName>
+        <InformationSystemVersion><xsl:value-of select="HEADER/INFORMATIONSYSTEMVERSION"/></InformationSystemVersion>
+        <ImportTypeID><xsl:value-of select="HEADER/IMPORTTYPEID"/></ImportTypeID>
+        <DateCreation><xsl:value-of select="HEADER/DATECREATION"/></DateCreation>
+      </ServiceInformation>
+    </ServiceInformations>
+      <!--Подразделения-->
+      <xsl:if test="ORGEH = 'X'">
+        <Organizations>
+          <xsl:for-each select="ORGANIZATION/item">
+            <Organization>
+              <OrganizationID>
+                <xsl:value-of select="ORGANIZATIONID"/>
+              </OrganizationID>
+              <Code>
+                <xsl:value-of select="CODE"/>
+              </Code>
+              <ShortName>
+                <xsl:value-of select="SHORTNAME"/>
+              </ShortName>
+              <Name>
+                <xsl:value-of select="NAME"/>
+              </Name>
+              <ParentID>
+                <xsl:value-of select="PARENTID"/>
+              </ParentID>
+              <CreationDate>
+                <xsl:value-of select="CREATIONDATE"/>
+              </CreationDate>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+              <NameGenitive>
+                <xsl:value-of select="NAMEGENITIVE"/>
+              </NameGenitive>
+              <NameDative>
+                <xsl:value-of select="NAMEDATIVE"/>
+              </NameDative>
+              <NameAccusative>
+                <xsl:value-of select="NAMEACCUSATIVE"/>
+              </NameAccusative>
+              <HierarchyName>
+                <xsl:value-of select="HIERARCHYNAME"/>
+              </HierarchyName>
+              <OrderToCreateNumb>
+                <xsl:value-of select="ORDERTOCREATENUMB"/>
+              </OrderToCreateNumb>
+              <OrderToAbolishNumb>
+                <xsl:value-of select="ORDERTOABOLISHNUMB"/>
+              </OrderToAbolishNumb>
+              <AbolitionDate>
+                <xsl:value-of select="ABOLITIONDATE"/>
+              </AbolitionDate>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+            </Organization>
+          </xsl:for-each>
+        </Organizations>
+      </xsl:if>
+      <!--Должности-->
+      <xsl:if test="STELL = 'X'">
+        <Positions>
+          <xsl:for-each select="POSITION/item">
+            <Position>
+              <PositionID>
+                <xsl:value-of select="POSITIONID"/>
+              </PositionID>
+<!--              <xsl:if test="ISSTATEPOSITION != '1'">-->
+                <Code>
+                  <xsl:value-of select="CODE"/>
+                </Code>
+<!--              </xsl:if>-->
+              <ShortName>
+                <xsl:value-of select="SHORTNAME"/>
+              </ShortName>
+              <Name>
+                <xsl:value-of select="NAME"/>
+              </Name>
+              <xsl:if test="CATEGORYNAME != ''">
+              <CategoryName>
+                <xsl:value-of select="CATEGORYNAME"/>
+              </CategoryName>
+              </xsl:if>
+              <xsl:if test="GROUPNAME != ''">
+              <GroupName>
+                <xsl:value-of select="GROUPNAME"/>
+              </GroupName>
+              </xsl:if>
+              <IsStatePosition>
+                <xsl:value-of select="ISSTATEPOSITION"/>
+              </IsStatePosition>
+              <PostSalary>
+                <xsl:value-of select="POSTSALARY"/>
+              </PostSalary>
+              <DateStart>
+                <xsl:value-of select="DATESTART"/>
+              </DateStart>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+              <NameGenitive>
+                <xsl:value-of select="NAMEGENITIVE"/>
+              </NameGenitive>
+              <NameDative>
+                <xsl:value-of select="NAMEDATIVE"/>
+              </NameDative>
+              <NameAccusative>
+                <xsl:value-of select="NAMEACCUSATIVE"/>
+              </NameAccusative>
+              <MonthlyPayment>
+                <xsl:value-of select="MONTHLYPAYMENT"/>
+              </MonthlyPayment>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+            </Position>
+          </xsl:for-each>
+        </Positions>
+      </xsl:if>
+      <!--Штатные единицы-->
+      <xsl:if test="PLANS = 'X'">
+        <Staffunits>
+          <xsl:for-each select="STAFFUNIT/item">
+            <Staffunit>
+              <StaffunitID>
+                <xsl:value-of select="STAFFUNITID"/>
+              </StaffunitID>
+              <OrganizationID>
+                <xsl:value-of select="ORGANIZATIONID"/>
+              </OrganizationID>
+              <PositionID>
+                <xsl:value-of select="POSITIONID"/>
+              </PositionID>
+              <DateStart>
+                <xsl:value-of select="DATESTART"/>
+              </DateStart>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+              <DateEnd>
+                <xsl:value-of select="DATEEND"/>
+              </DateEnd>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+            </Staffunit>
+          </xsl:for-each>
+        </Staffunits>
+      </xsl:if>
+      <!--      Общие сведения-->
+      <xsl:if test="PER00 = 'X'">
+        <Persons>
+          <xsl:for-each select="COMMON/item">
+            <Person>
+        <PersonID>
+          <xsl:value-of select="PERSONID"/>
+        </PersonID>
+        <LastName>
+          <xsl:value-of select="LASTNAME"/>
+        </LastName>
+        <FirstName>
+          <xsl:value-of select="FIRSTNAME"/>
+        </FirstName>
+        <xsl:if test="MIDDLENAME != ''">
+        <MiddleName>
+          <xsl:value-of select="MIDDLENAME"/>
+        </MiddleName>
+        </xsl:if>
+        <DateOfBirth>
+          <xsl:value-of select="DATEOFBIRTH"/>
+        </DateOfBirth>
+        <Gender>
+          <xsl:value-of select="GENDER"/>
+        </Gender>
+              <TaxCertificateNumber>
+                <xsl:value-of select="TAXCERTIFICATENUMBER"/>
+              </TaxCertificateNumber>
+              <InsuranceCertificateNumber>
+                <xsl:value-of select="INSURANCECERTIFICATENUMBER"/>
+              </InsuranceCertificateNumber>
+              <ExperienceGeneralYear>
+                <xsl:value-of select="EXPERIENCEGENERALYEAR"/>
+              </ExperienceGeneralYear>
+              <ExperienceGeneralMonths>
+                <xsl:value-of select="EXPERIENCEGENERALMONTHS"/>
+              </ExperienceGeneralMonths>
+              <ExperienceGeneralDays>
+                <xsl:value-of select="EXPERIENCEGENERALDAYS"/>
+              </ExperienceGeneralDays>
+              <ExperienceContinuousYear>
+                <xsl:value-of select="EXPERIENCECONTINUOUSYEAR"/>
+              </ExperienceContinuousYear>
+              <ExperienceContinuousMonths>
+                <xsl:value-of select="EXPERIENCECONTINUOUSMONTHS"/>
+              </ExperienceContinuousMonths>
+              <ExperienceContinuousDays>
+                <xsl:value-of select="EXPERIENCECONTINUOUSDAYS"/>
+              </ExperienceContinuousDays>
+              <ExperienceStateYear>
+                <xsl:value-of select="EXPERIENCESTATEYEAR"/>
+              </ExperienceStateYear>
+              <ExperienceStatelMonths>
+                <xsl:value-of select="EXPERIENCESTATELMONTHS"/>
+              </ExperienceStatelMonths>
+              <ExperienceStateDays>
+                <xsl:value-of select="EXPERIENCESTATEDAYS"/>
+              </ExperienceStateDays>
+              <MaritalStatusOKIN>
+                <xsl:value-of select="MARITALSTATUSOKIN"/>
+              </MaritalStatusOKIN>
+              <PassportSeries>
+                <xsl:value-of select="PASSPORTSERIES"/>
+              </PassportSeries>
+              <PassportNumber>
+                <xsl:value-of select="PASSPORTNUMBER"/>
+              </PassportNumber>
+              <PassportIssued>
+                <xsl:value-of select="PASSPORTISSUED"/>
+              </PassportIssued>
+              <PassportIssuedBy>
+                <xsl:value-of select="PASSPORTISSUEDBY"/>
+              </PassportIssuedBy>
+              <NumServiceContract>
+                <xsl:value-of select="NUMSERVICECONTRACT"/>
+              </NumServiceContract>
+              <DateServiceContract>
+                <xsl:value-of select="DATESERVICECONTRACT"/>
+              </DateServiceContract>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+              <MedicalInsurancePolicyNumber>
+                <xsl:value-of select="MEDICALINSURANCEPOLICYNUMBER"/>
+              </MedicalInsurancePolicyNumber>
+              <PassportIssuedCode>
+                <xsl:value-of select="PASSPORTISSUEDCODE"/>
+              </PassportIssuedCode>
+              <HasRelative>
+                <xsl:value-of select="HASRELATIVE"/>
+              </HasRelative>
+              <HasCertification>
+                <xsl:value-of select="HASCERTIFICATION"/>
+              </HasCertification>
+              <HasAdditionalEducation>
+                <xsl:value-of select="HASADDITIONALEDUCATION"/>
+              </HasAdditionalEducation>
+              <HasAward>
+                <xsl:value-of select="HASAWARD"/>
+              </HasAward>
+              <HasSocialBenefit>
+                <xsl:value-of select="HASSOCIALBENEFIT"/>
+              </HasSocialBenefit>
+              <HasRank>
+                <xsl:value-of select="HASRANK"/>
+              </HasRank>
+              <BirthPlace>
+                <xsl:value-of select="BIRTHPLACE"/>
+              </BirthPlace>
+              <BirthPlaceOKATO>
+                <xsl:value-of select="BIRTHPLACEOKATO"/>
+              </BirthPlaceOKATO>
+              <CitizenshipOKIN>
+                <xsl:value-of select="CITIZENSHIPOKIN"/>
+              </CitizenshipOKIN>
+              <AddressOfRegistration>
+                <xsl:value-of select="ADDRESSOFREGISTRATION"/>
+              </AddressOfRegistration>
+              <AddressOfRegistrationIndex>
+                <xsl:value-of select="ADDRESSOFREGISTRATIONINDEX"/>
+              </AddressOfRegistrationIndex>
+              <AddressOfResidence>
+                <xsl:value-of select="ADDRESSOFRESIDENCE"/>
+              </AddressOfResidence>
+              <AddressOfResidenceIndex>
+                <xsl:value-of select="ADDRESSOFRESIDENCEINDEX"/>
+              </AddressOfResidenceIndex>
+              <AddressRegistrationDate>
+                <xsl:value-of select="ADDRESSREGISTRATIONDATE"/>
+              </AddressRegistrationDate>
+              <WorkPhone>
+                <xsl:value-of select="WORKPHONE"/>
+              </WorkPhone>
+              <PersonalTabelNumber>
+                <xsl:value-of select="PERSONALTABELNUMBER"/>
+              </PersonalTabelNumber>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+            </Person>
+          </xsl:for-each>
+        </Persons>
+      </xsl:if>
+      <!--      Воински учет-->
+      <xsl:if test="PER01 = 'X'">
+        <MilitaryRecords>
+          <xsl:for-each select="MILITARY/item">
+            <MilitaryRecord>
+              <PersonID>
+                <xsl:value-of select="PERSONID"/>
+              </PersonID>
+              <MilitaryStockCategory>
+                <xsl:value-of select="MILITARYSTOCKCATEGORY"/>
+              </MilitaryStockCategory>
+              <MilitaryRank>
+                <xsl:value-of select="MILITARYRANK"/>
+              </MilitaryRank>
+              <MilitaryComposition>
+                <xsl:value-of select="MILITARYCOMPOSITION"/>
+              </MilitaryComposition>
+              <MilitaryVUSKode>
+                <xsl:value-of select="MILITARYVUSKODE"/>
+              </MilitaryVUSKode>
+              <MilitaryReadyCategory>
+                <xsl:value-of select="MILITARYREADYCATEGORY"/>
+              </MilitaryReadyCategory>
+              <MilitaryCommissariat>
+                <xsl:value-of select="MILITARYCOMMISSARIAT"/>
+              </MilitaryCommissariat>
+              <MilitaryRecordTotal>
+                <xsl:value-of select="MILITARYRECORDTOTAL"/>
+              </MilitaryRecordTotal>
+              <MilitaryRecordSpecial>
+                <xsl:value-of select="MILITARYRECORDSPECIAL"/>
+              </MilitaryRecordSpecial>
+              <MilitaryRecordRemoval>
+                <xsl:value-of select="MILITARYRECORDREMOVAL"/>
+              </MilitaryRecordRemoval>
+            </MilitaryRecord>
+          </xsl:for-each>
+        </MilitaryRecords>
+      </xsl:if>
+      <!--      Знание иностранного языка  -->
+      <xsl:if test="PER12 = 'X'">
+        <ForeignLanguages>
+          <xsl:for-each select="FOREIGNLANGUAGE/item">
+            <ForeignLanguage>
+              <ForeignLanguageID>
+                <xsl:value-of select="FOREIGNLANGUAGEID"/>
+              </ForeignLanguageID>
+              <PersonID>
+                <xsl:value-of select="PERSONID"/>
+              </PersonID>
+              <LanguageOKIN>
+                <xsl:value-of select="LANGUAGEOKIN"/>
+              </LanguageOKIN>
+              <LanguageDegreeOKIN>
+                <xsl:value-of select="LANGUAGEDEGREEOKIN"/>
+            </LanguageDegreeOKIN>
+            </ForeignLanguage>
+          </xsl:for-each>
+        </ForeignLanguages>
+      </xsl:if>
+      <!--      Образование-->
+      <xsl:if test="PER02 = 'X'">
+        <EducationBasics>
+          <xsl:for-each select="EDUCATION/item">
+            <EducationBasic>
+              <EducationBasicID>
+                <xsl:value-of select="EDUCATIONBASICID"/>
+              </EducationBasicID>
+              <PersonID>
+                <xsl:value-of select="PERSONID"/>
+              </PersonID>
+              <EducationOKIN>
+                <xsl:value-of select="EDUCATIONOKIN"/>
+              </EducationOKIN>
+              <InstitutionText>
+                <xsl:value-of select="INSTITUTIONTEXT"/>
+              </InstitutionText>
+              <DateStart>
+                <xsl:value-of select="DATESTART"/>
+              </DateStart>
+              <EndDate>
+                <xsl:value-of select="ENDDATE"/>
+              </EndDate>
+              <NameDocumentEducation>
+                <xsl:value-of select="NAMEDOCUMENTEDUCATION"/>
+              </NameDocumentEducation>
+              <EducationDocSeries>
+                <xsl:value-of select="EDUCATIONDOCSERIES"/>
+              </EducationDocSeries>
+              <EducationDocNumber>
+                <xsl:value-of select="EDUCATIONDOCNUMBER"/>
+              </EducationDocNumber>
+              <Qualification>
+                <xsl:value-of select="QUALIFICATION"/>
+              </Qualification>
+              <Speciality>
+                <xsl:value-of select="SPECIALITY"/>
+              </Speciality>
+              <SpecialityOKSO>
+                <xsl:value-of select="SPECIALITYOKSO"/>
+              </SpecialityOKSO>
+              <Education>
+                <xsl:value-of select="EDUCATION"/>
+              </Education>
+              <FlagMain>
+                <xsl:value-of select="FLAGMAIN"/>
+              </FlagMain>
+              <EducationDocDate><xsl:value-of select="EDUCATIONDOCDATE"/></EducationDocDate>
+              <WithHonorsDiploma><xsl:value-of select="WITHHONORSDIPLOMA"/></WithHonorsDiploma>
+            </EducationBasic>
+          </xsl:for-each>
+        </EducationBasics>
+      </xsl:if>
+      <!--Послевузовское профессиональное образование-->
+      <xsl:if test="PER13 = 'X'">
+        <EducationGraduates>
+          <xsl:for-each select="EDUCATION_GRAD/item">
+            <EducationGraduate>
+              <EducationGraduateID>
+                <xsl:value-of select="EDUCATIONGRADUATEID"/>
+              </EducationGraduateID>
+              <PersonID>
+                <xsl:value-of select="PERSONID"/>
+              </PersonID>
+              <InstitutionText>
+                <xsl:value-of select="INSTITUTIONTEXT"/>
+              </InstitutionText>
+              <Education>
+                <xsl:value-of select="EDUCATION"/>
+              </Education>
+              <DateStart>
+                <xsl:value-of select="DATESTART"/>
+              </DateStart>
+              <EndDate>
+                <xsl:value-of select="ENDDATE"/>
+              </EndDate>
+              <NameDocumentEducation>
+                <xsl:value-of select="NAMEDOCUMENTEDUCATION"/>
+              </NameDocumentEducation>
+              <EducationDocNumber>
+                <xsl:value-of select="EDUCATIONDOCNUMBER"/>
+              </EducationDocNumber>
+              <EducationDocDate>
+                <xsl:value-of select="EDUCATIONDOCDATE"/>
+              </EducationDocDate>
+              <Speciality>
+                <xsl:value-of select="SPECIALITY"/>
+              </Speciality>
+              <SpecialityOKSO>
+                <xsl:value-of select="SPECIALITYOKSO"/>
+              </SpecialityOKSO>
+              <AcademicDegree>
+                <xsl:value-of select="ACADEMICDEGREE"/>
+              </AcademicDegree>
+            </EducationGraduate>
+          </xsl:for-each>
+        </EducationGraduates>
+      </xsl:if>
+      <!--      Трудовая деятельность в государственном органе-->
+      <xsl:if test="PER03 = 'X'">
+        <OrderAppointments>
+          <xsl:for-each select="ORDERAPPOINTMENT/item">
+            <OrderAppointment>
+              <OrderappointmentID>
+                <xsl:value-of select="ORDERAPPOINTMENTID"/>
+              </OrderappointmentID>
+              <PersonID>
+                <xsl:value-of select="PERSONID"/>
+              </PersonID>
+              <OrganizationID>
+                <xsl:value-of select="ORGANIZATIONID"/>
+              </OrganizationID>
+              <PositionID>
+                <xsl:value-of select="POSITIONID"/>
+              </PositionID>
+              <OrderNumb>
+                <xsl:value-of select="ORDERNUMB"/>
+              </OrderNumb>
+              <OrderDate>
+                <xsl:value-of select="ORDERDATE"/>
+              </OrderDate>
+              <DateStart>
+                <xsl:value-of select="DATESTART"/>
+              </DateStart>
+              <DateEnd>
+                <xsl:value-of select="DATEEND"/>
+              </DateEnd>
+              <SheRate>
+                <xsl:value-of select="SHERATE"/>
+              </SheRate>
+              <OrderPeriodType>
+                <xsl:value-of select="ORDERPERIODTYPE"/>
+              </OrderPeriodType>
+              <FlagMain>
+                <xsl:value-of select="FLAGMAIN"/>
+              </FlagMain>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+              <StaffunitID>
+                <xsl:value-of select="STAFFUNITID"/>
+              </StaffunitID>
+              <SubstitutePersonID>
+                <xsl:value-of select="SUBSTITUTEPERSONID"/>
+              </SubstitutePersonID>
+      <!--Добавленные поля KlokovNYU23.05.2019-->
+            </OrderAppointment>
+          </xsl:for-each>
+        </OrderAppointments>
+      </xsl:if>
+      <!--Трудовая должность до замещения должности в государственном органе-->
+      <xsl:if test="PER04 = 'X'">
+        <WorkActivities>
+          <xsl:for-each select="WORKACTIVITIE/item">
+            <WorkActivitie>
+              <WorkActivitieID>
+                <xsl:value-of select="WORKACTIVITIEID"/>
+              </WorkActivitieID>
+              <PersonID>
+                <xsl:value-of select="PERSONID"/>
+              </PersonID>
+              <OrganizationText>
+                <xsl:value-of select="ORGANIZATIONTEXT"/>
+              </OrganizationText>
+              <AddressOrganization>
+                <xsl:value-of select="ADDRESSORGANIZATION"/>
+              </AddressOrganization>
+              <PositionText>
+                <xsl:value-of select="POSITIONTEXT"/>
+              </PositionText>
+              <DateStart>
+                <xsl:value-of select="DATESTART"/>
+              </DateStart>
+              <DateEnd>
+                <xsl:value-of select="DATEEND"/>
+              </DateEnd>
+              <ExperienceGeneral>
+                <xsl:value-of select="EXPERIENCEGENERAL"/>
+              </ExperienceGeneral>
+              <ExperienceState>
+                <xsl:value-of select="EXPERIENCESTATE"/>
+              </ExperienceState>
+            </WorkActivitie>
+          </xsl:for-each>
+        </WorkActivities>
+      </xsl:if>
+      <!--Оклады и надбавки-->
+      <xsl:if test="PER05 = 'X'">
+        <OrderSalarys>
+          <xsl:for-each select="ORDERSALARY/item">
+            <OrderSalary>
+              <OrderSalaryID><xsl:value-of select="ORDERSALARYID"/></OrderSalaryID>
+              <PersonID><xsl:value-of select="PERSONID"/></PersonID>
+              <OrderAppointmentID><xsl:value-of select="ORDERAPPOINTMENTID"/></OrderAppointmentID>
+              <PositionSalaryValue><xsl:value-of select="POSITIONSALARYVALUE"/></PositionSalaryValue>
+              <OrderRankID><xsl:value-of select="ORDERRANKID"/></OrderRankID>
+              <OrderNumb><xsl:value-of select="ORDERNUMB"/></OrderNumb>
+              <OrderDate><xsl:value-of select="ORDERDATE"/></OrderDate>
+              <DateStart><xsl:value-of select="DATESTART"/></DateStart>
+              <DateEnd><xsl:value-of select="DATEEND"/></DateEnd>
+              <SalaryTypeID><xsl:value-of select="SALARYTYPEID"/></SalaryTypeID>
+              <SalaryValue><xsl:value-of select="SALARYVALUE"/></SalaryValue>
+              <SalaryValueRuble><xsl:value-of select="SALARYVALUERUBLE"/></SalaryValueRuble>
+<!--              <RankID><xsl:value-of select="RANKID"/></RankID>-->
+            </OrderSalary>
+          </xsl:for-each>
+        </OrderSalarys>
+      </xsl:if>
+      <!--Состав семьи-->
+      <xsl:if test="PER06 = 'X'">
+        <Relatives>
+          <xsl:for-each select="RELATIVES/item">
+            <Relative>
+              <RelativeID><xsl:value-of select="RELATIVEID"/></RelativeID>
+              <PersonID><xsl:value-of select="PERSONID"/></PersonID>
+              <KinshipOKIN><xsl:value-of select="KINSHIPOKIN"/></KinshipOKIN>
+              <LastName><xsl:value-of select="LASTNAME"/></LastName>
+              <FirstName><xsl:value-of select="FIRSTNAME"/></FirstName>
+              <MiddleName><xsl:value-of select="MIDDLENAME"/></MiddleName>
+              <DateOfBirth><xsl:value-of select="DATEOFBIRTH"/></DateOfBirth>
+            </Relative>
+          </xsl:for-each>
+        </Relatives>
+      </xsl:if>
+      <!--Аттестация-->
+      <xsl:if test="PER08 = 'X'">
+      <Certifications>
+        <xsl:for-each select="CERTIFICATIONS/item">
+          <Certification>
+            <CertificationID><xsl:value-of select="CERTIFICATIONID"/></CertificationID>
+            <PersonID><xsl:value-of select="PERSONID"/></PersonID>
+            <Date><xsl:value-of select="DATE"/></Date>
+            <ResultText><xsl:value-of select="RESULTTEXT"/></ResultText>
+            <OrderNumber><xsl:value-of select="ORDERNUMBER"/></OrderNumber>
+            <OrderDate><xsl:value-of select="ORDERDATE"/></OrderDate>
+            <CommissionDecisionNote><xsl:value-of select="COMMISSIONDECISIONNOTE"/></CommissionDecisionNote>
+            <Reason><xsl:value-of select="REASON"/></Reason>
+          </Certification>
+        </xsl:for-each>
+      </Certifications>
+      </xsl:if>
+      <!--Повышение квалификации, Профессиональная переподготовка-->
+      <xsl:if test="PER07 = 'X'">
+        <EducationAdditionals>
+          <xsl:for-each select="EDUCATIONADDITIONAL/item">
+           	<EducationAdditional>
+              <EducationAdditionalID><xsl:value-of select="EDUCATIONADDITIONALID"/></EducationAdditionalID>
+              <PersonID><xsl:value-of select="PERSONID"/></PersonID>
+              <StartDate><xsl:value-of select="STARTDATE"/></StartDate>
+              <EndDate><xsl:value-of select="ENDDATE"/></EndDate>
+              <EducationsType><xsl:value-of select="EDUCATIONSTYPE"/></EducationsType>
+              <DPOId><xsl:value-of select="DPOID"/></DPOId>
+              <InstitutionText><xsl:value-of select="INSTITUTIONTEXT"/></InstitutionText>
+              <Speciality><xsl:value-of select="SPECIALITY"/></Speciality>
+              <NameDocumentEducation><xsl:value-of select="NAMEDOCUMENTEDUCATION"/></NameDocumentEducation>
+              <EducationDocNumber><xsl:value-of select="EDUCATIONDOCNUMBER"/></EducationDocNumber>
+              <EducationDocDate><xsl:value-of select="EDUCATIONDOCDATE"/></EducationDocDate>
+              <Reason><xsl:value-of select="REASON"/></Reason>
+           	</EducationAdditional>
+          </xsl:for-each>
+       </EducationAdditionals>
+      </xsl:if>
+      <!--Награды (поощрения), почетные звания-->
+      <xsl:if test="PER14 = 'X'">
+        <OrderAwards>
+          <xsl:for-each select="ORDERAWARD/item">
+           	<OrderAward>
+              <OrderAwardID><xsl:value-of select="ORDERAWARDID"/></OrderAwardID>
+              <PersonID><xsl:value-of select="PERSONID"/></PersonID>
+              <AwardKind><xsl:value-of select="AWARDKIND"/></AwardKind>
+              <AwardType><xsl:value-of select="AWARDTYPE"/></AwardType>
+              <AwardName><xsl:value-of select="AWARDNAME"/></AwardName>
+              <NameDocumentAward><xsl:value-of select="NAMEDOCUMENTAWARD"/></NameDocumentAward>
+              <NumberAwarding><xsl:value-of select="NUMBERAWARDING"/></NumberAwarding>
+              <DateAwarding><xsl:value-of select="DATEAWARDING"/></DateAwarding>
+           	</OrderAward>
+          </xsl:for-each>
+       </OrderAwards>
+      </xsl:if>
+      <!--Отпуск-->
+      <xsl:if test="PER09 = 'X'">
+      <Holidays>
+        <xsl:for-each select="HOLIDAYS/item">
+        <Holiday>
+          <HolidayID><xsl:value-of select="HOLIDAYID"/></HolidayID>
+          <PersonID><xsl:value-of select="PERSONID"/></PersonID>
+          <HolidayType><xsl:value-of select="HOLIDAYTYPE"/></HolidayType>
+          <PeriodDateStart><xsl:value-of select="PERIODDATESTART"/></PeriodDateStart>
+          <PeriodDateEnd><xsl:value-of select="PERIODDATEEND"/></PeriodDateEnd>
+          <PeriodCountDays><xsl:value-of select="PERIODCOUNTDAYS"/></PeriodCountDays>
+          <PeriodCountDaysRemain><xsl:value-of select="PERIODCOUNTDAYSREMAIN"/></PeriodCountDaysRemain>
+          <OrderNumb><xsl:value-of select="ORDERNUMB"/></OrderNumb>
+          <OrderDate><xsl:value-of select="ORDERDATE"/></OrderDate>
+          <CountDays><xsl:value-of select="COUNTDAYS"/></CountDays>
+          <DateStart><xsl:value-of select="DATESTART"/></DateStart>
+          <DateEnd><xsl:value-of select="DATEEND"/></DateEnd>
+        </Holiday>
+        </xsl:for-each>
+      </Holidays>
+      </xsl:if>
+      <!--Социальные льготы-->
+      <xsl:if test="PER15 = 'X'">
+      <SocialSecurities>
+        <xsl:for-each select="SOCIALSECURITY/item">
+        <SocialSecurity>
+          <SocialSecurityID><xsl:value-of select="SOCIALSECURITYID"/></SocialSecurityID>
+          <PersonID><xsl:value-of select="PERSONID"/></PersonID>
+          <SocialBenefit><xsl:value-of select="SOCIALBENEFIT"/></SocialBenefit>
+          <DocNumber><xsl:value-of select="DOCNUMBER"/></DocNumber>
+          <DateStart><xsl:value-of select="DATESTART"/></DateStart>
+          <DateEnd><xsl:value-of select="DATEEND"/></DateEnd>
+          <Reason><xsl:value-of select="REASON"/></Reason>
+        </SocialSecurity>
+        </xsl:for-each>
+      </SocialSecurities>
+      </xsl:if>
+      <!--Классный чин, воинское звание-->
+      <xsl:if test="PER10 = 'X'">
+      <OrderRanks>
+        <xsl:for-each select="ORDERRANKS/item">
+        <OrderRank>
+          <OrderRankID><xsl:value-of select="ORDERRANKID"/></OrderRankID>
+          <PersonID><xsl:value-of select="PERSONID"/></PersonID>
+          <DateStart><xsl:value-of select="DATESTART"/></DateStart>
+          <OrderNumb><xsl:value-of select="ORDERNUMB"/></OrderNumb>
+          <OrderDate><xsl:value-of select="ORDERDATE"/></OrderDate>
+          <RankID><xsl:value-of select="RANKID"/></RankID>
+        </OrderRank>
+        </xsl:for-each>
+      </OrderRanks>
+      </xsl:if>
+      <!--Сведения об увольнении-->
+      <xsl:if test="PER11 = 'X'">
+      <Orderdismissals>
+        <xsl:for-each select="ORDERDISMISSALS/item">
+          <OrderDismissal>
+            <OrderdismissalID><xsl:value-of select="ORDERDISMISSALID"/></OrderdismissalID>
+            <PersonID><xsl:value-of select="PERSONID"/></PersonID>
+            <OrderNumb><xsl:value-of select="ORDERNUMB"/></OrderNumb>
+            <OrderDate><xsl:value-of select="ORDERDATE"/></OrderDate>
+            <DateStart><xsl:value-of select="DATESTART"/></DateStart>
+            <DismissalReason><xsl:value-of select="DISMISSALREASON"/></DismissalReason>
+          </OrderDismissal>
+        </xsl:for-each>
+      </Orderdismissals>
+      </xsl:if>
+    </Import>
+  </xsl:template>
+</xsl:transform>

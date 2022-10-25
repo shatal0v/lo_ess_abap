@@ -1,0 +1,256 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="ROOT"/>
+  <tt:root name="MAIN"/>
+
+  <tt:template>
+    <?mso-application progid="Excel.Sheet"?>
+    <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html=
+"http://www.w3.org/TR/REC-html40">
+      <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+        <Author>KOTAN</Author>
+        <LastAuthor>KOTAN</LastAuthor>
+        <Created>2014-12-04T15:38:24Z</Created>
+        <Company>SPecialiST RePack</Company>
+        <Version>15.00</Version>
+      </DocumentProperties>
+      <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+        <AllowPNG/>
+      </OfficeDocumentSettings>
+      <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+        <WindowHeight>9408</WindowHeight>
+        <WindowWidth>23040</WindowWidth>
+        <WindowTopX>0</WindowTopX>
+        <WindowTopY>0</WindowTopY>
+        <ProtectStructure>False</ProtectStructure>
+        <ProtectWindows>False</ProtectWindows>
+      </ExcelWorkbook>
+      <Styles>
+        <Style ss:ID="Default" ss:Name="Normal">
+          <Alignment ss:Vertical="Bottom"/>
+          <Borders/>
+          <Font ss:Color="#000000" ss:FontName="Calibri" ss:Size="11" x:CharSet="204" x:Family="Swiss"/>
+          <Interior/>
+          <NumberFormat/>
+          <Protection/>
+        </Style>
+        <Style ss:ID="m953165896992">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+          <Borders>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            <Border ss:Color="#B3AC86" ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+          </Borders>
+          <Font ss:Color="#000000" ss:FontName="Arial" ss:Size="8" x:Family="Swiss"/>
+          <Interior ss:Color="#F5F2DD" ss:Pattern="Solid"/>
+          <NumberFormat/>
+        </Style>
+        <Style ss:ID="s63">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+          <Font ss:Bold="1" ss:FontName="Arial" ss:Size="12" x:CharSet="204" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s64">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+          <Font ss:Bold="1" ss:FontName="Arial" ss:Size="12" x:CharSet="204" x:Family="Swiss"/>
+          <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s65">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+        </Style>
+        <Style ss:ID="s66">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+          <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s67">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+          <Borders>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+          </Borders>
+        </Style>
+        <Style ss:ID="s68">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+          <Borders>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+          </Borders>
+          <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s87">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+          <Borders>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            <Border ss:Color="#B3AC86" ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+          </Borders>
+          <Font ss:Color="#000000" ss:FontName="Arial" ss:Size="8" x:CharSet="204" x:Family="Swiss"/>
+          <Interior ss:Color="#F5F2DD" ss:Pattern="Solid"/>
+          <NumberFormat/>
+        </Style>
+        <Style ss:ID="s88">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+          <Borders>
+            <Border ss:Color="#B3AC86" ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            <Border ss:Color="#B3AC86" ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+          </Borders>
+          <Font ss:Color="#000000" ss:FontName="Arial" ss:Size="8" x:CharSet="204" x:Family="Swiss"/>
+          <Interior ss:Color="#F5F2DD" ss:Pattern="Solid"/>
+          <NumberFormat/>
+        </Style>
+        <Style ss:ID="s89">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+          <Borders>
+            <Border ss:Color="#B3AC86" ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            <Border ss:Color="#548235" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+          </Borders>
+          <Font ss:Color="#000000" ss:FontName="Arial" ss:Size="8" x:CharSet="204" x:Family="Swiss"/>
+          <Interior ss:Color="#F5F2DD" ss:Pattern="Solid"/>
+          <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s94">
+          <Font ss:Color="#000000" ss:FontName="Arial" ss:Size="8" x:CharSet="204" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s95">
+          <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+          <Borders>
+            <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+          </Borders>
+          <Font ss:Color="#000000" ss:FontName="Arial" ss:Size="8" x:CharSet="204" x:Family="Swiss"/>
+        </Style>
+        <Style ss:ID="s96">
+          <Alignment ss:Horizontal="Right" ss:Vertical="Center" ss:WrapText="1"/>
+          <Borders>
+            <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+          </Borders>
+          <Font ss:Color="#000000" ss:FontName="Arial" ss:Size="8" x:CharSet="204" x:Family="Swiss"/>
+          <NumberFormat ss:Format="Fixed"/>
+        </Style>
+        <Style ss:ID="s97">
+          <Alignment ss:Vertical="Center"/>
+          <Font ss:Color="#000000" ss:FontName="Arial" ss:Size="8" x:CharSet="204" x:Family="Swiss"/>
+        </Style>
+      </Styles>
+      <Worksheet ss:Name="Лист1">
+        <Table>
+          <Column ss:AutoFitWidth="0" ss:Width="139.19999999999999"/>
+          <Column ss:AutoFitWidth="0" ss:Width="58.2"/>
+          <Column ss:AutoFitWidth="0" ss:Span="2" ss:Width="139.19999999999999"/>
+          <Column ss:AutoFitWidth="0" ss:Index="6" ss:Width="67.2"/>
+          <Column ss:AutoFitWidth="0" ss:Width="69"/>
+          <Column ss:AutoFitWidth="0" ss:Width="69"/>
+          <Row ss:Height="15.600000000000001">
+            <Cell ss:StyleID="s63">
+              <ss:Data xmlns="http://www.w3.org/TR/REC-html40" ss:Type="String">Отчет по остаткам отпусков на <tt:value ref="MAIN.FIELD01"/>
+              </ss:Data>
+            </Cell>
+          </Row>
+          <Row>
+          </Row>
+          <Row>
+          </Row>
+          <Row>
+            <Cell ss:MergeAcross="7" ss:StyleID="m953165896992">
+              <Data ss:Type="String">Сотрудники</Data>
+            </Cell>
+          </Row>
+          <Row ss:AutoFitHeight="1">
+            <Cell ss:StyleID="s87">
+              <Data ss:Type="String">Наименование</Data>
+            </Cell>
+            <Cell ss:StyleID="s88">
+              <Data ss:Type="String">Код (Таб. №)</Data>
+            </Cell>
+            <Cell ss:StyleID="s88">
+              <Data ss:Type="String">Подразделение</Data>
+            </Cell>
+            <Cell ss:StyleID="s88">
+              <Data ss:Type="String">Должность</Data>
+            </Cell>
+            <Cell ss:StyleID="s88">
+              <Data ss:Type="String">Вид договора</Data>
+            </Cell>
+            <Cell ss:StyleID="s88">
+              <Data ss:Type="String">Принят</Data>
+            </Cell>
+            <Cell ss:StyleID="s89">
+              <Data ss:Type="String">Остаток отпуска основной отпуск</Data>
+            </Cell>
+            <Cell ss:StyleID="s89">
+              <Data ss:Type="String">Остаток отпуска ненормированный</Data>
+            </Cell>
+          </Row>
+          <tt:loop name="LINE" ref=".ROOT">
+            <Row ss:AutoFitHeight="1">
+              <Cell ss:StyleID="s95">
+                <Data ss:Type="String">
+                  <tt:value ref="$LINE.FIO"/>
+                </Data>
+              </Cell>
+              <Cell ss:StyleID="s95">
+                <Data ss:Type="String">
+                  <tt:value ref="$LINE.PERNR"/>
+                </Data>
+              </Cell>
+              <Cell ss:StyleID="s95">
+                <Data ss:Type="String">
+                  <tt:value ref="$LINE.ORGEHTXT"/>
+                </Data>
+              </Cell>
+              <Cell ss:StyleID="s95">
+                <Data ss:Type="String">
+                  <tt:value ref="$LINE.PLANSTXT"/>
+                </Data>
+              </Cell>
+              <Cell ss:StyleID="s95">
+                <Data ss:Type="String">
+                  <tt:value ref="$LINE.DTYPE"/>
+                </Data>
+              </Cell>
+              <Cell ss:StyleID="s95">
+                <Data ss:Type="String">
+                  <tt:value ref="$LINE.PDATE"/>
+                </Data>
+              </Cell>
+              <Cell ss:StyleID="s96">
+                <Data ss:Type="String">
+                  <tt:value ref="$LINE.ANZHLMTXT"/>
+                </Data>
+              </Cell>
+              <Cell ss:StyleID="s96">
+                <Data ss:Type="String">
+                  <tt:value ref="$LINE.ANZHLOTXT"/>
+                </Data>
+              </Cell>
+            </Row>
+          </tt:loop>
+        </Table>
+        <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+          <PageSetup>
+            <Header x:Margin="0.3"/>
+            <Footer x:Margin="0.3"/>
+            <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+          </PageSetup>
+          <Selected/>
+          <Panes>
+            <Pane>
+              <Number>3</Number>
+              <ActiveRow>29</ActiveRow>
+              <ActiveCol>3</ActiveCol>
+            </Pane>
+          </Panes>
+          <ProtectObjects>False</ProtectObjects>
+          <ProtectScenarios>False</ProtectScenarios>
+        </WorksheetOptions>
+      </Worksheet>
+    </Workbook>
+  </tt:template>
+
+</tt:transform>

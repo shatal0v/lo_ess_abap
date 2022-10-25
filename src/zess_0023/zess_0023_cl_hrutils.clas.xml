@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZESS_0023_CL_HRUTILS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Набор утилит для работы с HR</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZESS_0023_CL_HRUTILS</CLSNAME>
+     <CMPNAME>GET_OBJEC_TEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Вербальное описание объекта</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZESS_0023_CL_HRUTILS</CLSNAME>
+     <CMPNAME>GET_ORGEH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Орг.единица из 0001 ИТ</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZESS_0023_CL_HRUTILS</CLSNAME>
+     <CMPNAME>GET_RELATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Связанные по 1001 объекты</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
